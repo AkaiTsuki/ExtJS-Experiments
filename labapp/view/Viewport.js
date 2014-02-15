@@ -1,28 +1,28 @@
 (function() {
-	Ext.define("KitchenSink.view.Viewport", {
+	Ext.define("LabApp.view.Viewport", {
 		extend : "Ext.container.Viewport",
-		requires:['KitchenSink.view.base.TreeNavigation'],
-		layout: 'fit',
+		requires : [ 'LabApp.view.base.TreeNavigation' ],
+		layout : 'fit',
 		items : [ {
 			xtype : 'panel',
 			width : '100%',
 			height : '100%',
-			
-			title: 'Kitchen Sink',
+
+			title : 'Lab App',
 			layout : 'border',
 			items : [ {
-				xtype: 'treenavigation',
+				xtype : 'treenavigation',
 				region : 'west',
-				split: true,
-				collapsible: true
+				split : true,
+				collapsible : true
 			}, {
 				xtype : 'panel',
 				margin : '5 0 0 0',
-				title: 'Documentation',
+				title : 'Documentation',
 				region : 'east',
 				height : '100%',
-				split: true,
-				collapsible: true, 
+				split : true,
+				collapsible : true,
 				width : 300
 			}, {
 				xtype : 'panel',
