@@ -1,25 +1,21 @@
 (function() {
 	Ext.define('LabApp.store.TreeNavigation', {
 		extend : 'Ext.data.TreeStore',
-		root : {
-			expanded : true,
-			children : [ {
-				text : "detention",
-				leaf : true
-			}, {
-				text : "homework",
-				expanded : true,
-				children : [ {
-					text : "book report",
-					leaf : true
-				}, {
-					text : "algebra",
-					leaf : true
-				} ]
-			}, {
-				text : "buy lottery tickets",
-				leaf : true
-			} ]
-		}
+		model : 'LabApp.model.Experiment',
+		
+		root: {
+			text: 'Experiments',
+			expended: true
+		},
+		
+		proxy: {
+            type: 'ajax',
+            url: 'data/experiments.json',
+            reader:{
+            	type: 'json',
+            	root: 'children',
+            	successProperty: 'success'
+            }
+		} 
 	});
 }());

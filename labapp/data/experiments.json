@@ -1,0 +1,43 @@
+{
+	success: true,
+	// To prevent infinity nesting
+	//This is the trick. It will load as children of the root node, if its name changed to something else, like 'experiments',
+	// Then all nodes that have children also use 'experiments' as 'children'
+	children: [{
+		id: 0,
+		text: "experiment 0",
+	
+		//Sub nodes that has children must use as same name as the root property
+		children:[
+			{
+				id: 1,
+				text: 'experiment 0-1',
+				leaf: true
+			}
+		]
+	},{
+		id:2,
+		text: "Experiment 1",
+		children:[
+			{
+				id: 3,
+				text: 'experiment 1-1',
+				leaf: true
+			},
+			{
+				id: 4,
+				text: 'experiment 1-2',
+				leaf: true
+			},
+			{
+				id: 5,
+				text: 'experiment 1-3',
+				children: [{
+					id:6,
+					text: 'Experiment 1-3-1',
+					leaf: true
+				}]
+			}
+		]
+	}]
+}

@@ -1,7 +1,7 @@
 (function() {
 	Ext.define("LabApp.view.Viewport", {
 		extend : "Ext.container.Viewport",
-		requires : [ 'LabApp.view.base.TreeNavigation' ],
+		requires : [ 'LabApp.view.TreeNavigation','LabApp.view.DocumentPanel','LabApp.view.CenterPanel' ],
 		layout : 'fit',
 		items : [ {
 			xtype : 'panel',
@@ -16,19 +16,14 @@
 				split : true,
 				collapsible : true
 			}, {
-				xtype : 'panel',
-				margin : '5 0 0 0',
-				title : 'Documentation',
-				region : 'east',
-				height : '100%',
+				xtype : 'documentpanel',				
+				region : 'east',			
 				split : true,
 				collapsible : true,
-				width : 300
+				
 			}, {
-				xtype : 'panel',
-				margin : '5 0 0 0',
-				region : 'center',
-				height : '100%'
+				xtype : 'centerpanel',
+				region : 'center'
 			} ]
 		} ]
 	});
