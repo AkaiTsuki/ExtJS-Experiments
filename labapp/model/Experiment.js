@@ -9,6 +9,8 @@
 			name: 'leaf', type: 'boolean', defaultValue: false
 		},{
 			name: 'expanded', defaultValue: true
+		},{
+			name: 'panelname',type:'string'
 		}]
 	});
 }());

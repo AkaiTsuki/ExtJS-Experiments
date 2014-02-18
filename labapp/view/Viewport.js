@@ -1,7 +1,7 @@
 (function() {
 	Ext.define("LabApp.view.Viewport", {
 		extend : "Ext.container.Viewport",
-		requires : [ 'LabApp.view.TreeNavigation','LabApp.view.DocumentPanel','LabApp.view.CenterPanel' ],
+		
 		layout : 'fit',
 		items : [ {
 			xtype : 'panel',

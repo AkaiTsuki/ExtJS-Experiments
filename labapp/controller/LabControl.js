@@ -1,8 +1,9 @@
 (function() {
 	Ext.define('LabApp.controller.LabControl', {
 		extend : 'Ext.app.Controller',
-		requires : [ 
-				'LabApp.store.TreeNavigation' ],
+		
+		requires:['LabApp.view.panel.BasicPanel','LabApp.view.grid.ArrayGrid'],
+		
 		views : [ 'TreeNavigation','DocumentPanel','CenterPanel' ],
 		stores : [ 'TreeNavigation' ],
 		models : ['Experiment'],
@@ -13,8 +14,15 @@
 				 'treenavigation':{
 					 itemclick : function(tree,record){
 						 console.log(record);
-						 Ext.getCmp('centerpanel').update(record.data.text);
-						 Ext.getCmp('documentpanel').update(record.data.text);
+						 if(record.data.leaf){
+							 var center = Ext.getCmp('centerpanel');
+							 center.setTitle(record.data.text);
+							 Ext.getCmp('documentpanel').update(record.data.text);
+							 center.removeAll();
+							 center.add(Ext.widget(record.data.panelname));
+							 center.doLayout();
+						 }
+						 
 					 }
 				 }
 		     });

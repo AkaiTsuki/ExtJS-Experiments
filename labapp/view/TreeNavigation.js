@@ -8,7 +8,7 @@
 		width : 300,
 		margin : '5 0 0 0',
 
-		rootVisible : true,
+		rootVisible : false,
 		store : 'TreeNavigation'
 
 	});

@@ -1,7 +1,7 @@
 (function() {
 	Ext.application({
 		name : 'LabApp',
-		appFolder : '/extjs-laboratory/labapp',
+		appFolder : '../labapp',
 		autoCreateViewport : true,
 
 		controllers : [ 'LabControl' ]
