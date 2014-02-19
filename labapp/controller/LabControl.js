@@ -2,7 +2,7 @@
 	Ext.define('LabApp.controller.LabControl', {
 		extend : 'Ext.app.Controller',
 		
-		requires:['LabApp.view.panel.BasicPanel','LabApp.view.grid.ArrayGrid'],
+		requires:['LabApp.view.panel.BasicPanel','LabApp.view.grid.ArrayGrid','LabApp.view.grid.GroupGrid'],
 		
 		views : [ 'TreeNavigation','DocumentPanel','CenterPanel' ],
 		stores : [ 'TreeNavigation' ],

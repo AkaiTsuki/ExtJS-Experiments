@@ -11,7 +11,7 @@
 		children:[
 			{
 				id: 1,
-				text: 'basic panel',
+				text: 'Basic Panel',
 				leaf: true,
 				panelname: 'basicpanel'
 			}
@@ -28,8 +28,9 @@
 			},
 			{
 				id: 4,
-				text: 'experiment 1-2',
-				leaf: true
+				text: 'Group Grid',
+				leaf: true,
+				panelname: 'groupgrid'
 			},
 			{
 				id: 5,

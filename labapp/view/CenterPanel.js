@@ -6,6 +6,8 @@
 		margin : '5 0 0 0',
 		title : 'Demo',
 		height : '100%',
-		layout:'fit'
+		bodyPadding: 10,
+		autoScroll: true
+//		layout:'fit'
 	});
 }());
