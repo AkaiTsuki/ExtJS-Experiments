@@ -34,8 +34,9 @@
 			},
 			{
 				id: 5,
-				text: 'experiment 1-3',
-				leaf: true
+				text: 'Group Header Grid',
+				leaf: true,
+				panelname: 'groupheadergrid'
 			}
 		]
 	}]

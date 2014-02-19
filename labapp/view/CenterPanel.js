@@ -7,7 +7,11 @@
 		title : 'Demo',
 		height : '100%',
 		bodyPadding: 10,
-		autoScroll: true
-//		layout:'fit'
+		autoScroll: true,
+		items:[{
+			xtype: 'panel',
+			html: "This site is only for learning ExtJS. It should not be used in commercial purpose.",
+			bodyPadding: 10
+		}]
 	});
 }());

@@ -19,5 +19,6 @@ Story #2 : As a user, I want to see a experiment that tells me how to create bas
 - collapsible panel.
 
 Story #3: As a user, I want to see a experiment on grid panel
-- The basic use of grid panel
-- The grouped grid panel
+- The basic use of grid panel.
+- The grouped grid panel.
+- The grouped header grid with locked columns.
