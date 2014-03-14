@@ -1,0 +1,69 @@
+[ {
+	widgetId : 1,
+	width : 600,
+	height: 400,
+	columns: [{
+			text: 'First Name',
+			flex: 1,
+			dataIndex: 'firstname'
+		},{
+			text: 'Last Name',
+			flex: 1,
+			dataIndex: 'lastname'
+		}]
+}, {
+	widgetId : 2,
+	width : 800,
+	height: 240,
+	columns: [{
+			text: 'First Name',
+			flex: 1,
+			dataIndex: 'firstname'
+		},{
+			text: 'Last Name',
+			flex: 1,
+			dataIndex: 'lastname'
+		},{
+			text: 'Age',
+			flex: 1,
+			dataIndex: 'age'
+		}]
+}, {
+	widgetId: 3,
+	width: 1000,
+	height: 240,
+	columns: [{
+			text: 'First Name',
+			flex: 1,
+			dataIndex: 'firstname'
+		},{
+			text: 'Last Name',
+			flex: 1,
+			dataIndex: 'lastname'
+		},{
+			text: 'Gender',
+			flex: 1,
+			dataIndex: 'gender'
+		}]
+},{
+	widgetId: 4,
+	width: 1200,
+	height: 340,
+	columns: [{
+			text: 'First Name',
+			flex: 1,
+			dataIndex: 'firstname'
+		},{
+			text: 'Last Name',
+			flex: 1,
+			dataIndex: 'lastname'
+		},{
+			text: 'Age',
+			flex: 1,
+			dataIndex: 'age'
+		},{
+			text: 'Gender',
+			flex: 1,
+			dataIndex: 'gender'
+		}]
+}]

@@ -1,0 +1,7 @@
+[{
+				firstname: 'FirstName1', lastname:'LastName1', age: 12, gender: 'male'
+			},{
+				firstname: 'FirstName2', lastname:'LastName2', age: 54, gender: 'female'
+			},{
+				firstname: 'FirstName3', lastname:'LastName3', age: 23, gender: 'male'
+			}]
